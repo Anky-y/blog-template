@@ -2,7 +2,6 @@
 import { siteConfig } from '@/site-config'
 import '../styles/global.css'
 import { ViewTransitions } from 'astro:transitions'
-import openGraphImage from '@/public/open-graph-new.png'
 
 export interface Props {
 	title: string
@@ -13,7 +12,7 @@ export interface Props {
 
 const { title, description = siteConfig.description, ogImage, articleDate } = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-const socialImageURL = openGraphImage
+const socialImageURL = new URL(ogImage ? ogImage : '/open-graph-new.png', Astro.url).href
 
 const titleSeparator = '•'
 
