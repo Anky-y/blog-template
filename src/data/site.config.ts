@@ -10,7 +10,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
+	site: 'https://anks-blog.netlify.app/', // Write here your website url
 	author: 'Anirudhwa Ankon', // Site author
 	title: "Ank's blogs", // Site title.
 	description: "Ank's blogs and projects", // Description to display in the meta tags
